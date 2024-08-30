@@ -15,12 +15,19 @@ java {
 repositories {
 	mavenCentral()
 }
+dependencies {
+	implementation('org.springframework.boot:spring-boot-starter-jersey')
+	implementation('org.glassfish.jersey.media:jersey-media-multipart')
+	implementation('com.fasterxml.jackson.datatype:jackson-datatype-jsr310')
 
-//dependencies {
-//
-//	testImplementation 'org.springframework.boot:spring-boot-starter-test'
-//	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
-//}
+	implementation('com.fasterxml.jackson.core:jackson-annotations')
+
+	implementation('io.swagger.core.v3:swagger-annotations-jakarta')
+	implementation('jakarta.annotation:jakarta.annotation-api')
+	implementation('jakarta.xml.bind:jakarta.xml.bind-api')
+	implementation('org.glassfish.jaxb:jaxb-runtime')
+	runtimeOnly('org.apache.logging.log4j:log4j-jul')
+}
 
 tasks.named('test') {
 	useJUnitPlatform()
