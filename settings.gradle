@@ -1,7 +1,3 @@
 rootProject.name = 'subscription-management'
-include 'subscription-application'
-include 'subscription-configuration'
-include 'subscription-dataaccess'
-include 'subscription-entryway'
-include 'subscription-service'
+
 
